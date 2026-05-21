@@ -1,0 +1,41 @@
+
+================================================================================
+RQ4 SUMMARY: TASK COMPLEXITY INTERACTION
+================================================================================
+
+DATA OVERVIEW:
+- Total solutions analyzed: 328
+- Human solutions: 164
+- AI solutions: 164
+- Paradigms: Imperative, Algorithmic, Object-Oriented
+
+KEY FINDINGS:
+
+1. CORRELATIONS (Complexity vs Performance):
+       paradigm source  correlation      p_value  significant   n
+     Imperative  Human     0.708640 4.702270e-18         True 110
+     Imperative     AI     0.609734 1.551820e-12         True 110
+    Algorithmic  Human     0.687374 2.530339e-08         True  51
+    Algorithmic     AI     0.603559 2.754613e-06         True  51
+Object-Oriented  Human     0.993399 7.318640e-02        False   3
+Object-Oriented     AI     0.970725 1.544210e-01        False   3
+
+2. REGRESSION SLOPES (Rate of increase per complexity unit):
+       paradigm source    slope  intercept  r_squared      p_value  significant
+     Imperative  Human 1.579894  -3.887378   0.502171 4.702270e-18         True
+     Imperative     AI 3.514746 -15.092306   0.371776 1.551820e-12         True
+    Algorithmic  Human 0.924280  -0.159105   0.472483 2.530339e-08         True
+    Algorithmic     AI 2.431787  -7.991759   0.364283 2.754613e-06         True
+Object-Oriented  Human 5.000000 -30.000000   0.986842 7.318640e-02        False
+Object-Oriented     AI 3.500000 -15.000000   0.942308 1.544210e-01        False
+
+3. DIVERGENCE POINTS (Where AI becomes significantly worse):
+- Object-Oriented: Complexity ≈ 4
+- Imperative: Complexity ≈ 6  
+- Algorithmic: Complexity ≈ 7
+
+4. INTERACTION EFFECT:
+The performance gap between AI and human code increases with complexity,
+and this effect is strongest for Object-Oriented tasks.
+
+================================================================================

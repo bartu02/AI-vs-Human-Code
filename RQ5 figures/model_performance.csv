@@ -1,0 +1,7 @@
+metric,value
+Cross-validation F1 (5-fold),0.9621 ± 0.0238
+Test Accuracy,0.9545
+Test Precision,0.9412
+Test Recall,0.9697
+Test F1 Score,0.9552
+AUC-ROC,0.9982

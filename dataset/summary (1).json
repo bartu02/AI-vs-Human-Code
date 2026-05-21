@@ -1,0 +1,8 @@
+{
+  "model": "bigcode/starcoder2-3b",
+  "batch_size": 4,
+  "total": 164,
+  "successful": 164,
+  "failed": 0,
+  "success_rate": "100.0%"
+}

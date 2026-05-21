@@ -1,0 +1,70 @@
+TRAINING + CROSS-VALIDATION + SAVING MODEL
+============================================================
+
+📚 Loading data...
+✅ Dataset: 328 samples (164 Human, 164 AI)
+   Features: ['loc', 'returns', 'ifs', 'loops', 'comments']
+
+📊 Split:
+   Training: 262 samples
+   Testing: 66 samples
+
+🤖 Training Random Forest...
+
+   5-Fold CV on Training Set:
+   F1 Scores: [0.92307692 0.98039216 0.98039216 0.98113208 0.94545455]
+   Mean F1: 0.9621 ± 0.0238
+
+📊 Evaluating on test set...
+
+ Test Set Results:
+   Accuracy: 0.9545
+   Precision: 0.9412
+   Recall: 0.9697
+   F1 Score: 0.9552
+
+ Classification Report:
+              precision    recall  f1-score   support
+
+       Human       0.97      0.94      0.95        33
+          AI       0.94      0.97      0.96        33
+
+    accuracy                           0.95        66
+   macro avg       0.95      0.95      0.95        66
+weighted avg       0.95      0.95      0.95        66
+
+
+✅ Saved: figures/final_confusion_matrix.png/pdf
+✅ Saved: figures/final_feature_importance.png/pdf
+✅ Saved: figures/final_roc_curve.png/pdf
+
+✅ Saved model: /kaggle/working/models/ai_detector_model.pkl
+✅ Saved scaler: /kaggle/working/models/scaler.pkl
+✅ Saved: tables/model_performance.csv
+
+============================================================
+✅ FINAL MODEL TRAINED AND VALIDATED!
+============================================================
+
+SUMMARY:
+--------
+Training samples: 262
+Test samples: 66
+Cross-validation F1: 0.9621 ± 0.0238
+Test Accuracy: 0.9545
+Test F1 Score: 0.9552
+AUC-ROC: 0.9982
+
+TOP FEATURES:
+1. loc: 0.649
+2. returns: 0.205
+3. ifs: 0.060
+
+
+📁 Output files:
+   - figures/final_confusion_matrix.png/pdf
+   - figures/final_feature_importance.png/pdf
+   - figures/final_roc_curve.png/pdf
+   - tables/model_performance.csv
+   - models/ai_detector_model.pkl
+   - models/scaler.pkl
