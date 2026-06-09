@@ -1,4 +1,0 @@
-,CV F1,Test acc.,Test F1,Test AUC
-A: all 5 features (thesis baseline),0.997,1.000,1.000,1.000
-B: without LOC,0.976,0.970,0.971,1.000
-C: per-LOC normalized,0.975,0.955,0.952,0.981
